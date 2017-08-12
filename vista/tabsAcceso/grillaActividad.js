@@ -1,6 +1,6 @@
 $(function() {
 
-            $("#jsGridRubros").jsGrid({
+            $("#jsGridActividades").jsGrid({
                 height: "auto",
                 width: "100%",
                 inserting: true,
@@ -14,7 +14,7 @@ $(function() {
                      $.ajax({
                        type: "GET",
                        contentType: "application/json; charset=utf-8",
-                       url: "../../controlador/controlRubros/controlRubro.php",
+                       url: "../../controlador/controlRubros/controlActividad.php",
                        dataType: "json"
                        }).done(function(response){
                          data.resolve(response);
@@ -24,13 +24,20 @@ $(function() {
                 },
                  fields: [
                    //{ name: "ID",width: 150, align: "center" },
-                    { name: "Rubro", type: "text" },
-                    { name: "Abreviatura", type: "text", align: "center" },
-                    { name: "Etiqueta", type: "text"},
+                    { name: "Actividad", type: "text" },
+                    { name: "Rubro", type: "select", items: db, valueField: "Id", textField: "name" },
+                    { name: "Abreviatura", type: "text"},
                     { type: "control", editButton: false, modeSwitchButton: false }
                 ]
             });
 
         });
-
+  var db = [
+        { name: "-- SELECCIONE RUBRO --", Id: 0 },
+        { name: "United States", Id: 1 },
+        { name: "Canada", Id: 2 },
+        { name: "United Kingdom", Id: 3 },
+        { name: "France", Id: 4 },
+        { name: "Brazil", Id: 5 }
+    ];
 

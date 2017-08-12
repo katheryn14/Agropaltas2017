@@ -17,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title><?php echo $_SESSION['U_Empresa'];?> | Rubros y Actividades </title>
+    <title><?php echo $_SESSION['U_Empresa'];?> | Roles </title>
 
     <link href="../css/alerta.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -45,22 +45,12 @@
 
     <link href="../css/modal.css" rel="stylesheet">
   </head>
-<style type="text/css">
-  .nav.side-menu>li.active>a{
-  background: linear-gradient(#1f6421, #1b9c1e),#1f582e;
-      text-shadow: rgba(0,0,0,0.25) 0 -1px 0;
-}
 
-.btn-success {
-    background: #26b946;
-    border: 1px solid #169F85;
-}
-</style>
-  <body class="nav-md" style="background-color: #307713;">
+  <body class="nav-md">
     <div class="container body">
       <div class="main_container">
         <div class="col-md-3 left_col">
-          <div class="left_col scroll-view" style="background-color:#307713;">
+          <div class="left_col scroll-view">
             <!-- top menu -->
             <?php 
               require('../menus/topMenu.php');
@@ -115,9 +105,6 @@
                     <div id="jsGridRubros"></div>
                     
                   </div>
-                  <br>
-                <button type="button" class="btn btn-success"><i class="fa fa-floppy-o"></i> GRABAR BD</button><button type="button" class="btn btn-default" onclick=""><b><i class="fa fa-file-code-o"></i></b> GRABAR LOCAL</button>
-                <br>
                 </div>
               </div>
               <div id="actividad" class="tab-pane fade">
@@ -125,6 +112,9 @@
                   <div class="x_title">
                     <h2>ACTIVIDADES</h2>                    
                     <div class="clearfix"></div>
+                  </div>
+                  <div>
+                    <div id="jsGridActividades"></div>
                   </div>
                   <?php 
                     //require('../Mantenedores/actividades.php');
@@ -238,8 +228,8 @@
     <script src="../../recursos/jsgrid153/src/jsgrid.field.js"></script>
     <script src="../../recursos/jsgrid153/src/fields/jsgrid.field.text.js"></script>
     <script src="../../recursos/jsgrid153/src/fields/jsgrid.field.control.js"></script>
-    <script src="../tabsAcceso/db.js"></script>
     <script src="../tabsAcceso/grillaRubros.js"></script>
+    <script src="../tabsAcceso/grillaActividad.js"></script>
     
     <script>
       $(document).ready(function() {
