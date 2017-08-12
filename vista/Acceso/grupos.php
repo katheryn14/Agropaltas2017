@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Turismo | Grupos </title>
-
+ 
     <link href="../css/alerta.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">

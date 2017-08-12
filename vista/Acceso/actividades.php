@@ -120,7 +120,7 @@
               <div id="actividad" class="tab-pane fade">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>ACTIVIDADES</h2>                    
+                    <h2>LISTADO DE ACTIVIDADES</h2>                    
                     <div class="clearfix"></div>
                   </div>
                   <div>
@@ -134,8 +134,11 @@
               <div id="labor" class="tab-pane fade">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>LABORES</h2>                    
+                    <h2>LISTADO DE LABORES</h2>                    
                     <div class="clearfix"></div>
+                  </div>
+                  <div>
+                    <div id="jsGridLabor"></div>
                   </div>
                   <?php 
                     //require('../Mantenedores/labores.php');
@@ -240,7 +243,7 @@
     <script src="../../recursos/jsgrid153/src/fields/jsgrid.field.control.js"></script>
     <script src="../tabsAcceso/grillaRubros.js"></script>
     <script src="../tabsAcceso/grillaActividad.js"></script>
-    
+     <script src="../tabsAcceso/grillaLabor.js"></script>
     <script>
       $(document).ready(function() {
         autosize($('.resizable_textarea'));
