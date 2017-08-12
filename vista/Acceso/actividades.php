@@ -45,12 +45,22 @@
 
     <link href="../css/modal.css" rel="stylesheet">
   </head>
+<style type="text/css">
+  .nav.side-menu>li.active>a{
+  background: linear-gradient(#1f6421, #1b9c1e),#1f582e;
+      text-shadow: rgba(0,0,0,0.25) 0 -1px 0;
+}
 
+.btn-success {
+    background: #26b946;
+    border: 1px solid #169F85;
+}
+</style>
   <body class="nav-md" style="background-color: #307713;">
     <div class="container body">
       <div class="main_container">
         <div class="col-md-3 left_col">
-          <div class="left_col scroll-view">
+          <div class="left_col scroll-view" style="background-color: #307713;">
             <!-- top menu -->
             <?php 
               require('../menus/topMenu.php');

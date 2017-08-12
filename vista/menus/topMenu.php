@@ -1,4 +1,4 @@
-<div class="navbar nav_title" style="border: 0;">
+<div class="navbar nav_title" style="border: 0;background-color: #307713;">
 	<a href="../Acceso/home.php" class="site_title">
 		<i class="fa fa-leaf"></i> <span><?php echo $_SESSION['U_Empresa'];?></span>
 	</a>
